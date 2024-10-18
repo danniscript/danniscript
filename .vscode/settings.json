@@ -3,16 +3,18 @@
 
 	"editor.formatOnSave": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.colorDecorators": false,
 
 	"files.exclude": {
 		".svelte-kit/": true,
-		".vscode/": false,
+		".vscode/": true,
 		"node_modules/": true,
 		"vite.config.js.timestamp-*": true,
 		"vite.config.ts.timestamp-*": true,
 		"bun.lockb": true,
 		"eslint.config.js": true,
-		"tsconfig.json": true
+		"tsconfig.json": true,
+		"postcss.config.js": true
 	},
 
 	"workbench.colorTheme": "Night Howl (No Italics)",
@@ -22,5 +24,5 @@
 
 	"svelte.enable-ts-plugin": true,
 
-	"cSpell.words": ["danniscript", "tseslint"]
+	"cSpell.words": ["danniscript", "tailwindcss", "tseslint"]
 }
