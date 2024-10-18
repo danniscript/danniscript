@@ -5,6 +5,8 @@
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.colorDecorators": false,
 
+	"breadcrumbs.enabled": false,
+
 	"files.exclude": {
 		".svelte-kit/": true,
 		".vscode/": true,
@@ -20,9 +22,14 @@
 	"workbench.colorTheme": "Night Howl (No Italics)",
 	"workbench.iconTheme": "r-sveltekit-icons",
 
+	"explorer.compactFolders": false,
+
 	"terminal.integrated.defaultProfile.windows": "Git Bash",
 
 	"svelte.enable-ts-plugin": true,
+
+	"r-sveltekit-icons.componentsFolder": ["ui"],
+	"r-sveltekit-icons.componentsFoldersNames": ["components", "sections"],
 
 	"cSpell.words": ["danniscript", "tailwindcss", "tseslint"]
 }
