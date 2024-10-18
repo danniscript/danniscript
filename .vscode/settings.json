@@ -1,0 +1,26 @@
+{
+	"window.commandCenter": false,
+
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+
+	"files.exclude": {
+		".svelte-kit/": true,
+		".vscode/": false,
+		"node_modules/": true,
+		"vite.config.js.timestamp-*": true,
+		"vite.config.ts.timestamp-*": true,
+		"bun.lockb": true,
+		"eslint.config.js": true,
+		"tsconfig.json": true
+	},
+
+	"workbench.colorTheme": "Night Howl (No Italics)",
+	"workbench.iconTheme": "r-sveltekit-icons",
+
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+
+	"svelte.enable-ts-plugin": true,
+
+	"cSpell.words": ["danniscript", "tseslint"]
+}

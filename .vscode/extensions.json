@@ -1,0 +1,9 @@
+{
+	"recommendations": [
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint",
+		"DanniScript.r-sveltekit-icons",
+		"Matia.night-howl",
+		"streetsidesoftware.code-spell-checker"
+	]
+}
