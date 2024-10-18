@@ -1,28 +1,22 @@
 <script lang="ts">
+	import { ToggleTheme } from '$ui/components'
 	import '../app.css'
 
 	let { children } = $props()
-
-	let darkMode = $state(true)
-
-	//$effect(() => )
-
-	function handleToggleTheme() {
-		darkMode = !darkMode
-
-		darkMode
-			? document.documentElement.classList.add('dark')
-			: document.documentElement.classList.remove('dark')
-	}
 </script>
 
 <svelte:head>
 	<title>danniscript</title>
 </svelte:head>
 
-<header>
-	<input type="checkbox" id="toggle" onclick={handleToggleTheme} />
-	<label for="toggle"></label>
+<header class="bg-test">
+	<div>
+		<button type="button">
+			<enhanced:img src="./path/to/your/image.jpg" alt="danniscript" />
+		</button>
+	</div>
+
+	<ToggleTheme />
 </header>
 
 {@render children()}
