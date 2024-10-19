@@ -23,6 +23,7 @@
 	"workbench.iconTheme": "r-sveltekit-icons",
 
 	"explorer.compactFolders": false,
+	"explorer.sortOrder": "filesFirst",
 
 	"terminal.integrated.defaultProfile.windows": "Git Bash",
 

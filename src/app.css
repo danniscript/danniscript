@@ -4,8 +4,19 @@
 
 @layer base {
 	body {
+		@apply scrollbar-hidden;
 		@apply dark:bg-neutral-900 dark:text-neutral-300;
 		@apply bg-neutral-200 text-neutral-800;
+	}
+}
+
+@layer utilities {
+	.scrollbar-hidden::-webkit-scrollbar {
+		display: none;
+	}
+	.scrollbar-hidden {
+		-ms-overflow-style: none;
+		scrollbar-h-width: none;
 	}
 }
 
