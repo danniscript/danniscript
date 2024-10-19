@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ToggleTheme } from '$ui/components'
+	import { Header } from '$ui/sections'
 	import '../app.css'
 
 	let { children } = $props()
@@ -9,14 +9,8 @@
 	<title>danniscript</title>
 </svelte:head>
 
-<header class="bg-test">
-	<div>
-		<button type="button">
-			<enhanced:img src="./path/to/your/image.jpg" alt="danniscript" />
-		</button>
-	</div>
+<div class="mx-auto max-w-[1000px] px-[2rem]">
+	<Header />
 
-	<ToggleTheme />
-</header>
-
-{@render children()}
+	{@render children()}
+</div>

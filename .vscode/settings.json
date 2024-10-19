@@ -29,7 +29,7 @@
 	"svelte.enable-ts-plugin": true,
 
 	"r-sveltekit-icons.componentsFolder": ["ui"],
-	"r-sveltekit-icons.componentsFoldersNames": ["components", "sections"],
+	"r-sveltekit-icons.componentsFoldersNames": ["components", "sections", "icons"],
 
-	"cSpell.words": ["danniscript", "tailwindcss", "tseslint"]
+	"cSpell.words": ["clsx", "danniscript", "tailwindcss", "tseslint"]
 }
