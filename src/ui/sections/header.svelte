@@ -4,7 +4,17 @@
 	import { cn } from '$lib/utils'
 	import { page } from '$app/stores'
 
-	let isBlogPage = $derived($page.url.pathname === '/')
+	let isBlogPage = $derived($page.url.href === '' || $page.url.href === 'blog')
+	let isWorkbenchPage = $derived($page.url.href === '/workbench')
+
+	$inspect($page.url.hash)
+	$inspect($page.url.hash)
+	$inspect($page.url.hash)
+	$inspect($page.url.hash)
+	$inspect($page.url.hash)
+	$inspect($page.url.hash)
+	$inspect($page.url.hash)
+	$inspect($page.url.hash)
 </script>
 
 <header class="flex items-center justify-between pt-[2rem]">
@@ -18,7 +28,10 @@
 			Blog
 		</a>
 		<a
-			class={cn('header-menu-item', !isBlogPage && 'text-neutral-800 dark:text-neutral-200')}
+			class={cn(
+				'header-menu-item',
+				isWorkbenchPage && 'text-neutral-800 dark:text-neutral-200'
+			)}
 			href="/workbench"
 		>
 			Workbench

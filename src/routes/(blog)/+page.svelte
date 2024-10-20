@@ -58,7 +58,7 @@
 >
 	{#each posts as post (post.slug)}
 		<a
-			href="/"
+			href="/blog/{post.slug}"
 			class="flex h-[5rem] items-center justify-between border-t-[0.0625rem] border-neutral-300 px-[1rem] hover:bg-neutral-300/30 dark:border-neutral-800 dark:hover:bg-neutral-800/20"
 		>
 			<h3 class="text-[1.125rem] font-medium text-neutral-600 dark:text-neutral-400">

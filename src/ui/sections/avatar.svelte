@@ -23,11 +23,11 @@
 
 {#if open}
 	<div
-		class="absolute bottom-0 left-0 right-0 top-0 grid place-items-center bg-neutral-800/50 backdrop-blur-[1px]"
+		class="absolute bottom-0 left-0 right-0 top-0 grid place-items-center bg-neutral-800/50 backdrop-blur-[1px] dark:bg-neutral-500/50"
 	>
 		<div
 			use:outsideClick={() => (open = false)}
-			class="w-[60rem] rounded-[1rem] bg-neutral-200 px-[4rem] py-[3rem] text-[1.25rem] text-neutral-600"
+			class="w-[60rem] rounded-[1rem] bg-neutral-200 px-[4rem] py-[3rem] text-[1.25rem] text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300"
 		>
 			<p class="mb-[1rem]">Hola, I'm Daniel.</p>
 			<p class="mb-[1rem]">
