@@ -18,6 +18,10 @@
 		-ms-overflow-style: none;
 		scrollbar-h-width: none;
 	}
+
+	.no-scroll {
+		@apply overflow-hidden;
+	}
 }
 
 @layer components {
