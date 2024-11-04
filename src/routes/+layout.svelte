@@ -1,6 +1,9 @@
 <script lang="ts">
+	import { setDarkMode } from '$ui/sections'
 	import { Header } from '$ui/sections'
 	import '../app.css'
+
+	setDarkMode(true)
 
 	let { children } = $props()
 </script>

@@ -15,6 +15,18 @@ class DarkModeModel {
 		$effect(() => {
 			localStorage.setItem('DarkMode', JSON.stringify(this.value))
 		})
+
+		$effect(() => {
+			if (this.value) {
+				document.documentElement.classList.add('dark')
+			} else {
+				document.documentElement.classList.remove('dark')
+			}
+		})
+	}
+
+	toggle() {
+		this.value = !this.value
 	}
 }
 

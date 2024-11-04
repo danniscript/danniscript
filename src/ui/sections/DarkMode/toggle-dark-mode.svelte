@@ -1,28 +1,22 @@
 <script lang="ts">
 	import { MoonIcon, SunIcon } from '$ui/icons'
-	import { setDarkMode } from '$ui/sections'
+	import { getDarkMode } from '$ui/sections'
 
-	let darkMode = setDarkMode(true)
+	let darkMode = getDarkMode()
 
-	$effect(() => {
-		darkMode.value
-			? document.documentElement.classList.add('dark')
-			: document.documentElement.classList.remove('dark')
-	})
+	function handleClick() {
+		darkMode.toggle()
+	}
 </script>
 
-<div class="flex h-full items-center">
-	<input
-		type="checkbox"
-		id="toggle"
-		class="hidden"
-		onclick={() => (darkMode.value = !darkMode.value)}
-	/>
-	<label for="toggle" class="header-menu-item">
-		{#if darkMode.value}
-			<SunIcon />
-		{:else}
-			<MoonIcon />
-		{/if}
-	</label>
-</div>
+<button
+	class="flex h-full items-center px-[1rem] font-medium text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200"
+	type="button"
+	onclick={handleClick}
+>
+	{#if darkMode.value}
+		<SunIcon />
+	{:else}
+		<MoonIcon />
+	{/if}
+</button>

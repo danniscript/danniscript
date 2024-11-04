@@ -23,18 +23,3 @@
 		@apply overflow-hidden;
 	}
 }
-
-@layer components {
-	.header-menu-item {
-		@apply flex h-full items-center px-[1rem] font-medium;
-		@apply text-neutral-500;
-		@apply hover:text-neutral-800;
-		@apply dark:text-neutral-400;
-		@apply dark:hover:text-neutral-200;
-	}
-	.header-menu-divider {
-		@apply mx-[0.75rem] inline-block h-[1.5rem] w-[0.0625rem];
-		@apply bg-neutral-400/80;
-		@apply dark:bg-neutral-700;
-	}
-}
